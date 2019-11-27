@@ -1,0 +1,4 @@
+framework module BleshSDKLite {
+    header "BleshSDKLite-Swift.h"
+    requires objc
+}
