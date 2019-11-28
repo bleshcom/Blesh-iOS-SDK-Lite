@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "BleshSDKLite"
-    s.version          = "5.0.0"
+    s.version          = "5.0.1"
     s.summary          = "Blesh iOS SDK-Lite"
     s.homepage         = "https://github.com/bleshcom/Blesh-iOS-SDK-Lite"
     s.author           = { "Blesh Technology Team" => "technology@blesh.com" }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
     s.source_files = 'BleshSDKLite.framework/Headers/*.h'
     s.vendored_frameworks = 'BleshSDKLite.framework'
-    s.frameworks = 'Foundation', 'UIKit', 'CoreLocation', 'CoreTelephony', 'CoreBluetooth'
+    s.frameworks = 'Foundation', 'UIKit', 'CoreLocation', 'CoreTelephony'
 
     s.license      = {
         :type => 'Copyright',

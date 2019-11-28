@@ -163,7 +163,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # define SWIFT_DEPRECATED_OBJC(Msg) SWIFT_DEPRECATED_MSG(Msg)
 #endif
 #if __has_feature(modules)
-@import CoreBluetooth;
 @import CoreLocation;
 @import ObjectiveC;
 @import UIKit;
@@ -223,11 +222,9 @@ SWIFT_CLASS("_TtC12BleshSDKLite21BleshSdkConfiguration")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
-@class CBCentralManager;
 
 SWIFT_CLASS("_TtC12BleshSDKLite13DeviceManager")
-@interface DeviceManager : NSObject <CBCentralManagerDelegate>
-- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
+@interface DeviceManager : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end

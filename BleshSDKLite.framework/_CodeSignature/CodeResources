@@ -10,19 +10,19 @@
 		</data>
 		<key>Headers/BleshSDKLite-Swift.h</key>
 		<data>
-		Ms6iX0XIVxTbLHVbbofVxJ7aidA=
+		JphqJg/yQP4lAmq97AiZ3T3Hhak=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9oSLujWYNFOJdmnehmHlDi7bzuI=
+		4Uhpls5JUQz52tQTVNduEs1O7vo=
 		</data>
 		<key>Modules/BleshSDKLite.swiftmodule/arm.swiftdoc</key>
 		<data>
-		S2jJRqOhE/DHvkRCEnwZ0G6T3PU=
+		vfw0Lh6JnsCnBTl40IZHQXrkEJk=
 		</data>
 		<key>Modules/BleshSDKLite.swiftmodule/arm.swiftmodule</key>
 		<data>
-		1GR/3ZaaiMC+IFSQPUEnKwx8GTU=
+		fojIhgXPhJ0EBXApqGImPrLHfGk=
 		</data>
 		<key>Modules/BleshSDKLite.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/BleshSDKLite.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		T204r4bnSkdAoRT0uSD05MAADX8=
+		9cEKFTEqyo6InyR+evk7S/wZn8k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,33 +54,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ms6iX0XIVxTbLHVbbofVxJ7aidA=
+			JphqJg/yQP4lAmq97AiZ3T3Hhak=
 			</data>
 			<key>hash2</key>
 			<data>
-			4gXINVz9gX4OXumqvN6Lf8Wpv6/2mdCkuBHqQi/w6Iw=
+			SmsiGrw1EFJoNe5MEX/NA2TXym3fOM1GMrny+sJ1uko=
 			</data>
 		</dict>
 		<key>Modules/BleshSDKLite.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			S2jJRqOhE/DHvkRCEnwZ0G6T3PU=
+			vfw0Lh6JnsCnBTl40IZHQXrkEJk=
 			</data>
 			<key>hash2</key>
 			<data>
-			qtfhFRbZBie+qSjClNGlRsSkkgHEoA13hx4Gt4pmj1A=
+			c5wmV1iq70lsN6422LpUs+sM4nV/NtYB9dZPU/8rpw0=
 			</data>
 		</dict>
 		<key>Modules/BleshSDKLite.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			1GR/3ZaaiMC+IFSQPUEnKwx8GTU=
+			fojIhgXPhJ0EBXApqGImPrLHfGk=
 			</data>
 			<key>hash2</key>
 			<data>
-			uuVzxzslucNHwT+23EzxyV5uQylllwJ/EzzfEblV5ss=
+			qVu5Kx0oXVt5H2hH32OwYzr8+7Ij3jU3cwnObjptJrI=
 			</data>
 		</dict>
 		<key>Modules/BleshSDKLite.swiftmodule/arm64.swiftdoc</key>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T204r4bnSkdAoRT0uSD05MAADX8=
+			9cEKFTEqyo6InyR+evk7S/wZn8k=
 			</data>
 			<key>hash2</key>
 			<data>
-			U0gSZA8llB8+tWUp8fSNTWzhUjRp8uFJR7o7zz98agA=
+			F/yCwJYjpZ27CPmZ/0aWQR1L8hecBSkd2EnZLrSKfqo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,6 +1,6 @@
 # Blesh iOS SDK-Lite 5 Developer Guide
 
-**Version:** *5.0.0*
+**Version:** *5.0.1*
 
 This document describes integration of the Blesh iOS SDK-Lite with your iOS application.
 
@@ -11,6 +11,9 @@ Blesh iOS SDK-Lite collects location information from a device on which the iOS 
 > **Note:** Lite edition of the Blesh iOS SDK does not display ads. Its primary use-cases are enhancing audiences and aiding insights generation.
 
 ## Changelog
+
+  * **5.0.1** *(Released 11/28/2019)*
+    * Removed Core Bluetooth framework
 
   * **5.0.0** *(Released 11/26/2019)*
     * Added initialization support
@@ -24,7 +27,6 @@ In order to integrate the Blesh iOS SDK-Lite make sure you are:
 
   * Targeting iOS version 9 or higher
   * Targeting the Swift 4.2.1 compiler
-  * Using an iOS device compatible with Bluetooth 4.0 *(Optional. Required for supporting Blesh Beacon Detection)*
   * Registered on the *Blesh Publisher Portal*
     * You may need to create a *Blesh Ads Platform Access Key* for the iOS platform
 
@@ -38,7 +40,7 @@ The Blesh iOS SDK-Lite can be added either by using CocoaPods or manually.
 
 #### 1.1. Adding the Blesh iOS SDK-Lite with CocoaPods
 
-Referencing the `BleshSDKLite` pod with version `5.0.0` in the `Podfile` will be sufficient to add the Blesh iOS SDK to your project.
+Referencing the `BleshSDKLite` pod with version `5.0.1` in the `Podfile` will be sufficient to add the Blesh iOS SDK to your project.
 
 **Steps to add:**
 
@@ -55,7 +57,7 @@ target 'YOUR_APPLICATION_NAME' do
 
   # ... beginning of your Podfile ...
 
-  pod 'BleshSDKLite', :git => 'https://github.com/bleshcom/Blesh-iOS-SDK-Lite.git', :tag => '5.0.0' # this will reference the Blesh iOS SDK-Lite 5
+  pod 'BleshSDKLite', :git => 'https://github.com/bleshcom/Blesh-iOS-SDK-Lite.git', :tag => '5.0.1' # this will reference the Blesh iOS SDK-Lite 5
 
   # ... remaining of your Podfile ...
 
@@ -93,7 +95,6 @@ Blesh iOS SDK-Lite utilizes following frameworks. Please make sure that your pro
  * Foundation.framework
  * UIKit.framework
  * AdSupport.framework
- * CoreBluetooth.framework
  * CoreLocation.framework
  * CoreTelephony.framework
  * SystemConfiguration.framework
@@ -212,7 +213,7 @@ Void start(withSecretKey: string, withApplicationUser: BleshSdkApplicationUser, 
 | Property    | Type                     | Description                                  | Example              |
 |-------------|--------------------------|----------------------------------------------|----------------------|
 | UserId      | String?                  | Optional unique identifier of the user       | 42                   |
-| Gender      | NSNumber?                  | Optional gender of the user (0 for female or 1 for male) | 0               |
+| Gender      | NSNumber?                | Optional gender of the user (0 for female or 1 for male) | 0               |
 | YearOfBirth | Int?                     | Optional year of birth of the user           | 1999                 |
 | Email       | String?                  | Optional email address of the user           | jane.doe@example.com |
 | PhoneNumber | String?                  | Optional mobile phone number of the user     | +905550000000        |
