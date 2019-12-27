@@ -1,6 +1,6 @@
 # Blesh iOS SDK-Lite 5 Developer Guide
 
-**Version:** *5.0.1*
+**Version:** *5.1.0*
 
 This document describes integration of the Blesh iOS SDK-Lite with your iOS application.
 
@@ -11,6 +11,10 @@ Blesh iOS SDK-Lite collects location information from a device on which the iOS 
 > **Note:** Lite edition of the Blesh iOS SDK does not display ads. Its primary use-cases are enhancing audiences and aiding insights generation.
 
 ## Changelog
+
+  * **5.1.0** *(Released 12/27/2019)*
+    * Added local push notification support
+    * Added more location handlers
 
   * **5.0.1** *(Released 11/28/2019)*
     * Removed Core Bluetooth framework
@@ -40,7 +44,7 @@ The Blesh iOS SDK-Lite can be added either by using CocoaPods or manually.
 
 #### 1.1. Adding the Blesh iOS SDK-Lite with CocoaPods
 
-Referencing the `BleshSDKLite` pod with version `5.0.1` in the `Podfile` will be sufficient to add the Blesh iOS SDK to your project.
+Referencing the `BleshSDKLite` pod with version `5.1.0` in the `Podfile` will be sufficient to add the Blesh iOS SDK to your project.
 
 **Steps to add:**
 
@@ -57,7 +61,7 @@ target 'YOUR_APPLICATION_NAME' do
 
   # ... beginning of your Podfile ...
 
-  pod 'BleshSDKLite', :git => 'https://github.com/bleshcom/Blesh-iOS-SDK-Lite.git', :tag => '5.0.1' # this will reference the Blesh iOS SDK-Lite 5
+  pod 'BleshSDKLite', :git => 'https://github.com/bleshcom/Blesh-iOS-SDK-Lite.git', :tag => '5.1.0' # this will reference the Blesh iOS SDK-Lite 5
 
   # ... remaining of your Podfile ...
 

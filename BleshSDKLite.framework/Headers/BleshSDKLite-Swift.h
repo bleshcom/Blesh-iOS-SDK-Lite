@@ -165,7 +165,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import CoreLocation;
 @import ObjectiveC;
-@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -186,11 +185,14 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class BleshSdkConfiguration;
 @class BleshSdkApplicationUser;
 @class CLLocation;
+@class UNNotificationResponse;
+@class UILocalNotification;
 
 SWIFT_CLASS("_TtC12BleshSDKLite8BleshSDK")
 @interface BleshSDK : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BleshSDK * _Nonnull SharedInstance;)
 + (BleshSDK * _Nonnull)SharedInstance SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic) BOOL isStarted;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)startWithSecretKey:(NSString * _Nonnull)key;
 - (void)startWithSecretKey:(NSString * _Nonnull)key completion:(void (^ _Nonnull)(BOOL))completion;
@@ -201,8 +203,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BleshSDK * _
 - (void)startWithSecretKey:(NSString * _Nonnull)key withApplicationUser:(BleshSdkApplicationUser * _Nonnull)applicationUser withConfiguration:(BleshSdkConfiguration * _Nonnull)configuration;
 - (void)startWithSecretKey:(NSString * _Nonnull)key withApplicationUser:(BleshSdkApplicationUser * _Nonnull)applicationUser withConfiguration:(BleshSdkConfiguration * _Nonnull)configuration completion:(void (^ _Nonnull)(BOOL))completion;
 - (void)stop;
-- (void)didChangeLocationAuthorization:(CLAuthorizationStatus)status;
+- (void)restartWithTrigger:(NSString * _Nonnull)trigger;
 - (void)didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (void)didChangeLocationAuthorization:(CLAuthorizationStatus)status;
+- (void)didChangeNotificationAuthorization:(BOOL)granted;
+- (void)didReceiveUNNotificationResponse:(UNNotificationResponse * _Nonnull)response SWIFT_AVAILABILITY(ios,introduced=10);
+- (void)didReceiveLocalNotification:(UILocalNotification * _Nonnull)notification;
 @end
 
 @class NSNumber;
@@ -222,20 +228,36 @@ SWIFT_CLASS("_TtC12BleshSDKLite21BleshSdkConfiguration")
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
+enum BleshSdkStartState : NSInteger;
 
-SWIFT_CLASS("_TtC12BleshSDKLite13DeviceManager")
-@interface DeviceManager : NSObject
+SWIFT_PROTOCOL("_TtP12BleshSDKLite16BleshSdkDelegate_")
+@protocol BleshSdkDelegate
+@optional
+- (void)bleshSdk:(BleshSDK * _Nonnull)sdk didCompleteStartWith:(enum BleshSdkStartState)state;
+- (BOOL)bleshSdk:(BleshSDK * _Nonnull)sdk willDisplayNotification:(NSString * _Nonnull)notificationId SWIFT_WARN_UNUSED_RESULT;
+@end
+
+typedef SWIFT_ENUM(NSInteger, BleshSdkStartState, closed) {
+  BleshSdkStartStateFailure = 0,
+  BleshSdkStartStateSuccess = 1,
+  BleshSdkStartStateSkipped = 2,
+};
+
+@class CLLocationManager;
+@class CLRegion;
+@class CLVisit;
+
+SWIFT_CLASS("_TtC12BleshSDKLite15LocationService")
+@interface LocationService : NSObject <CLLocationManagerDelegate>
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager monitoringDidFailForRegion:(CLRegion * _Nullable)region withError:(NSError * _Nonnull)error;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didEnterRegion:(CLRegion * _Nonnull)region;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didExitRegion:(CLRegion * _Nonnull)region;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion * _Nonnull)region;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didVisit:(CLVisit * _Nonnull)visit;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
-
-
-SWIFT_CLASS("_TtC12BleshSDKLite10Permission")
-@interface Permission : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

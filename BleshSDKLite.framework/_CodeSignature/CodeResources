@@ -10,27 +10,27 @@
 		</data>
 		<key>Headers/BleshSDKLite-Swift.h</key>
 		<data>
-		JphqJg/yQP4lAmq97AiZ3T3Hhak=
+		onp/nTEl3rvh04wmULZU2c3u1iE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4Uhpls5JUQz52tQTVNduEs1O7vo=
+		QJx/fQcGxbD0B9fmiCF9PZGDcSs=
 		</data>
 		<key>Modules/BleshSDKLite.swiftmodule/arm.swiftdoc</key>
 		<data>
-		vfw0Lh6JnsCnBTl40IZHQXrkEJk=
+		ajukIwPywrdO7atNW4gPTifwul8=
 		</data>
 		<key>Modules/BleshSDKLite.swiftmodule/arm.swiftmodule</key>
 		<data>
-		fojIhgXPhJ0EBXApqGImPrLHfGk=
+		cPszAFBLGy7nicoBn+Sufu95gpk=
 		</data>
 		<key>Modules/BleshSDKLite.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		2dBSfJkabGIvvGzfTYWrYGF56jU=
+		/HvnLGlZH8O31ZVOyFwsRKZ+k0w=
 		</data>
 		<key>Modules/BleshSDKLite.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		9cEKFTEqyo6InyR+evk7S/wZn8k=
+		/RPN0+sN6Qv8dsHdidvcYLeK6UU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,55 +54,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JphqJg/yQP4lAmq97AiZ3T3Hhak=
+			onp/nTEl3rvh04wmULZU2c3u1iE=
 			</data>
 			<key>hash2</key>
 			<data>
-			SmsiGrw1EFJoNe5MEX/NA2TXym3fOM1GMrny+sJ1uko=
+			Dxt0hX+T/LEBedughlRTAWQFNfkWiiDOKyXJ0KHkuuQ=
 			</data>
 		</dict>
 		<key>Modules/BleshSDKLite.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vfw0Lh6JnsCnBTl40IZHQXrkEJk=
+			ajukIwPywrdO7atNW4gPTifwul8=
 			</data>
 			<key>hash2</key>
 			<data>
-			c5wmV1iq70lsN6422LpUs+sM4nV/NtYB9dZPU/8rpw0=
+			fIrJF9agK0bUgy21Py2maf2Q76vxhWDozE14Jx74ryE=
 			</data>
 		</dict>
 		<key>Modules/BleshSDKLite.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fojIhgXPhJ0EBXApqGImPrLHfGk=
+			cPszAFBLGy7nicoBn+Sufu95gpk=
 			</data>
 			<key>hash2</key>
 			<data>
-			qVu5Kx0oXVt5H2hH32OwYzr8+7Ij3jU3cwnObjptJrI=
+			MZE+VpTHVnqIF8QbpjNO5PpKbJLY/MYbPhn0waFKvG8=
 			</data>
 		</dict>
 		<key>Modules/BleshSDKLite.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2dBSfJkabGIvvGzfTYWrYGF56jU=
+			/HvnLGlZH8O31ZVOyFwsRKZ+k0w=
 			</data>
 			<key>hash2</key>
 			<data>
-			lhFfwkZra7WCYmStxzV0mAj13LvIDLx8t+gYYkR8+Ug=
+			auezQA9seiR/Mg84hGBaNUtco2nKxvIDN/pLbaUAS8k=
 			</data>
 		</dict>
 		<key>Modules/BleshSDKLite.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			9cEKFTEqyo6InyR+evk7S/wZn8k=
+			/RPN0+sN6Qv8dsHdidvcYLeK6UU=
 			</data>
 			<key>hash2</key>
 			<data>
-			F/yCwJYjpZ27CPmZ/0aWQR1L8hecBSkd2EnZLrSKfqo=
+			FV9Pap/RIqKLq10oIF3ZXZ4AWYfCXPBwfqlHhuRrHAs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
